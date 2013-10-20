@@ -30,8 +30,6 @@ $(function() {
     maxZoom : config.map.basemap.maxZoom
   }).addTo(map);
 
-  var zoomControl = new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
-
   var playersControl = new L.Control.Layers(undefined, undefined, { collapsed: true, position: 'topleft' }).addTo(map);
   $('.leaflet-left .leaflet-control-layers-toggle')[0].classList.add('icon-profile');
 
@@ -247,7 +245,5 @@ $(function() {
    ** VIEWS
    **/
 
-  //// button(s) in top-right corner
-  var controls = new ControlsView({ player: localPlayer });
 
 });
