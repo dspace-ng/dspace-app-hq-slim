@@ -1,0 +1,107 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-size: 20px;
+  padding: 0.25em;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#controls {
+    position: absolute;
+    bottom: 20px;
+    width: 70%;
+    left: 5%;
+    z-index: 10000;
+}
+
+#controls button {
+  position: relative;
+  padding: 0.25em 0;
+}
+#controls button.capture {
+  width: 40%;
+  margin: 0 1%;
+}
+#controls button.about, #controls button.settings {
+  width: 20%;
+}
+
+.modal {
+    position: absolute;
+    z-index: 100000;
+    background: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal form {
+    margin: 20px;
+}
+
+button.close {
+  float: right;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.modal form textarea {
+  width: 100%;
+  font-size: 18px;
+  margin-top: 15px;
+  height: 4em;
+}
+
+.modal input[type=text] {
+  font-size: 1.3em;
+  padding: .2em;
+}
+
+label.photo {
+  font-size: 30px;
+  width: 50px;
+  height: 30px;
+}
+
+label.photo input {
+  width: 50px;
+  height: 30px;
+  opacity: 0;
+}
+
+button.submit {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+img.avatar, img.team {
+  margin:5px;
+  background-color: #d5d5d5;
+  border: 2px solid black;
+}
+
+#select-avatar {
+  clear: both;
+}
+
+.leaflet-control-layers-toggle {
+  font-size: 28px;
+  text-align: center;
+}
+
+.leaflet-control-layers a { color: rgba(0,0,0,.3); }
+.leaflet-control-layers-list { font-size: 2em; }
